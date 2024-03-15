@@ -1,12 +1,14 @@
 ﻿Feature: ShoppingCart
 
-A short summary of the feature
+As a customer 
+I want to calculate the total price of items in my shopping cart
+So that I know how much I'll be paying
 
 @shoppin @price
 Scenario: Calculate Total Price of item added in shopping cart
 	Given the following items are in my shopping cart:
 	| Items     | Quanity | Price |
-	| chocolate | 2       | 100   |
+	| Chocolate | 2       | 100   |
 	| Chips     | 1       | 50    |
 	| Juice     | 2       | 25    |
 	When I calculate the total price

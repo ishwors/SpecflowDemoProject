@@ -34,5 +34,12 @@ namespace SpecFlowTest.StepDefinitions
         {
             Assert.AreEqual(result, _result);
         }
+
+        [When(@"the two numbers are multiplied")]
+        public void WhenTheTwoNumbersAreMultiply()
+        {
+            _result = _calculator.Multiply();
+        }
+
     }
 }

@@ -21,3 +21,11 @@ Scenario: Multiply two numbers
 	# right click on keyword to get `Bind Code` for related step like - for `When`
 	When the two numbers are multiplied
 	Then the result should be 3500
+
+@add
+Scenario: Add two numbers using data table
+	Given the first and second numbers are:
+		| Number1 | Number2 |
+		| 10      | 20      |
+	When the two numbers are added
+	Then the result should be 30

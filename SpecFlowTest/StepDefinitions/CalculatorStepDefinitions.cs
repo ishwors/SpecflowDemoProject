@@ -1,5 +1,6 @@
 using CalculatorApp;
 using NUnit.Framework;
+using TechTalk.SpecFlow.Assist;
 using TechTalk.SpecFlow.CommonModels;
 
 namespace SpecFlowTest.StepDefinitions
@@ -26,7 +27,7 @@ namespace SpecFlowTest.StepDefinitions
         [When("the two numbers are added")]
         public void WhenTheTwoNumbersAreAdded()
         {
-            _result = _calculator.Add();
+            _result = _calculator.Add(); // Actual Result
         }
 
         [Then("the result should be (.*)")]
@@ -41,5 +42,20 @@ namespace SpecFlowTest.StepDefinitions
             _result = _calculator.Multiply();
         }
 
+        [Given(@"the first and second numbers are:")]
+        public void GivenTheFirstAndSecondNumberAre(Table table)
+        {
+            var numbers = table.CreateSet<CalculatorInput>();
+            _calculator.FirstNumber = numbers.First().Number1;
+            _calculator.SecondNumber = numbers.First().Number2;
+        }
+
+    }
+
+    public class CalculatorInput
+    {
+        public int Number1 { get; set; }
+        public int Number2 { get; set; }
     }
 }
+

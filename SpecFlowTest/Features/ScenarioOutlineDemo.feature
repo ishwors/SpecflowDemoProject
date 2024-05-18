@@ -9,14 +9,14 @@ Scenario Outline: Add two numbers using scenario outline
 
 @positiveNumbers
 Examples: 1 add positive numbers
-	| number1 | number2 | expectedSum |
-	| 50      | 70      | 120         |
-	| 5       | 7       | 12          |
-	| 1       | 2       | 3           |
+	| SN  | number1 | number2 | expectedSum |
+	| 101 | 50      | 70      | 120         |
+	| 102 | 5       | 7       | 12          |
+	| 103 | 1       | 2       | 3           |
 
 @negativeNumbers
 Examples: 2 add negative numbers
-	| number1 | number2 | expectedSum |
-	| -50     | -70     | -120        |
-	| -5      | -7      | -12         |
-	| -1      | -2      | -3          |
+	| SN  | number1 | number2 | expectedSum |
+	| 201 | -50     | -70     | -120        |
+	| 202 | -5      | -7      | -12         |
+	| 203 | -1      | -2      | -3          |

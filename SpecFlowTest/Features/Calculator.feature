@@ -7,7 +7,7 @@ Link to a feature: [Calculator](SpecFlowTest/Features/Calculator.feature)
  
 #this is Case Sensitive
 @add
-Scenario: Add two numbers
+Scenario: 1 Add two numbers
 	Given the first number is 50
 	And the second number is 70
 	When the two numbers are added
@@ -15,7 +15,7 @@ Scenario: Add two numbers
 
 
 @multiply
-Scenario: Multiply two numbers
+Scenario: 2 Multiply two numbers
 	Given the first number is 50
 	And the second number is 70
 	# right click on keyword to get `Bind Code` for related step like - for `When`
@@ -23,7 +23,7 @@ Scenario: Multiply two numbers
 	Then the result should be 3500
 
 @add
-Scenario: Add two numbers using data table
+Scenario: 3 Add two numbers using data table
 	Given the first and second numbers are:
 		| Number1 | Number2 |
 		| 10      | 20      |

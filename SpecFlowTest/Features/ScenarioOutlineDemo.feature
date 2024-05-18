@@ -1,4 +1,5 @@
-﻿Feature: ScenarioOutlineDemo
+﻿@test
+Feature: ScenarioOutlineDemo
 
 @add
 Scenario Outline: Add two numbers using scenario outline
